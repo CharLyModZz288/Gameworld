@@ -88,21 +88,43 @@
       </div>
       <!-- CATÁLOGO JUEGOS -->
 <section id="catalogo" class="mt-10">
-  <h3 class="text-2xl font-bold mb-4 text-indigo-300">🎮 Gestión de Catálogo</h3>
+  <h3 class="text-2xl font-bold mb-4 text-indigo-300">
+    🎮 Gestión de Catálogo
+  </h3>
 
-  <div class="bg-gray-900 rounded-lg p-6 text-center">
-    <p class="text-gray-300">
-      Agregar, editar o eliminar videojuegos del catálogo.
-    </p>
+  <div class="bg-gray-900 rounded-lg p-6 space-y-6">
 
-    <button
-      id="btnAñadirJuego"
-      class="mt-4 bg-indigo-700 hover:bg-indigo-800 px-4 py-2 rounded"
-    >
-      + Añadir Juego
-    </button>
+    <!-- LISTA DE JUEGOS -->
+    <div>
+      <h4 class="text-lg font-semibold text-indigo-400 mb-2">
+        Juegos en la base de datos
+      </h4>
+
+      <ul
+        id="listaJuegos"
+        class="divide-y divide-gray-700 border border-gray-700 rounded"
+      >
+        <!-- Juegos cargados desde admin-juegos.js -->
+      </ul>
+    </div>
+
+    <!-- INFO + BOTÓN -->
+    <div class="text-center">
+      <p class="text-gray-300 mb-3">
+        Agregar, editar o eliminar videojuegos del catálogo.
+      </p>
+
+      <button
+        id="btnAñadirJuego"
+        class="bg-indigo-700 hover:bg-indigo-800 px-4 py-2 rounded"
+      >
+        + Añadir Juego
+      </button>
+    </div>
+
   </div>
 </section>
+
 
 <!-- MODAL AÑADIR JUEGO -->
 <div
